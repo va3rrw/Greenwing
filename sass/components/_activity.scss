@@ -50,8 +50,20 @@
       color: $default-color;
 
       ul {
-        margin-top: 0;
+        margin-top: 5px;
         margin-left: 35px;
+      }
+
+      li {
+        margin-top: 3px;
+        font-size: 0.85rem;
+      }
+
+      .activity-changes {
+          p {
+            margin-top: 5px;
+            font-size: 0.85rem;
+          }
       }
     }
   }

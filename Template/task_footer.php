@@ -1,5 +1,4 @@
 <div class="task-board-icons">
-  
     <div class="task-board-icons-row-wrapper">
         <div class="task-board-icons-row">
             <?php if ($task['is_milestone'] == 1): ?>

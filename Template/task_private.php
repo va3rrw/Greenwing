@@ -58,7 +58,7 @@
 
             <?php if (! empty($task['category_id'])): ?>
             <div class="task-board-category-container task-board-category-container-color">
-                <h4><?= t('Category'); ?></h4>
+                <span class="task-board-category-title"><?= t('Category'); ?></span>
                 <span class="task-board-category category-<?= $this->text->e($task['category_name']) ?> <?= $task['category_color_id'] ? "color-{$task['category_color_id']}" : '' ?>">
                     <?php if ($not_editable): ?>
                         <?= $this->text->e($task['category_name']) ?>
@@ -82,7 +82,7 @@
 
             <?php if (! empty($task['tags'])): ?>
                 <div class="task-tags">
-                    <h4><?= t('Tags'); ?></h4>
+                    <span class="task-board-tags-title"><?= t('Tags'); ?></span>
                     <ul>
                     <?php foreach ($task['tags'] as $tag): ?>
                         <li class="task-tag <?= $tag['color_id'] ? "color-{$tag['color_id']}" : '' ?>"><?= $this->text->e($tag['name']) ?></li>

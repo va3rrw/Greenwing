@@ -39,7 +39,7 @@ $task-colors: (
   }
 
   .board-task-list .task-board.color-#{$name} {
-    border-top: 3px solid $hex;
+    border-top: 10px solid $hex;
     &:hover,
     &:focus {
       border-top-color: darken($hex, 10);
@@ -50,7 +50,7 @@ $task-colors: (
     background-color: lighten($hex, 30);
 
     a {
-      color: $hex;
+      color: darken($hex, 30);
     }
 
     .tooltip .fa-info-circle {
@@ -58,12 +58,16 @@ $task-colors: (
       font-size: 0.8rem;
     }
   }
+
   .table-list .table-list-row.color-#{$name} {
-    border-left: 5px solid $hex;
+    border-left: 10px solid $hex;
+    border-top: 10px solid $hex;
+    border-top-left-radius: 25px;
 
     &:hover,
     &:focus {
       border-left-color: darken($hex, 10);
+      border-top-color: darken($hex, 10);
     }
   }
 
@@ -77,7 +81,7 @@ $task-colors: (
       color: $hex;
 
       a {
-        color: $hex;
+        color: darken($hex, 30);
       }
     }
   }
