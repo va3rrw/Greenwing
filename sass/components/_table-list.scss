@@ -85,6 +85,7 @@
       .table-list-title {
         display: inline;
         padding: 0;
+        font-size: 1rem;
       }
     }
 
@@ -115,8 +116,8 @@
       color: $default-text-color;
       padding: 5px 10px;
       border-top: 1px solid $default-border-color;
-      font-size: 1.0rem;
-      line-height: 30px;
+      //font-size: 1.0rem;
+      line-height: 24px;
       strong {
         color: $default-text-color;
     	  font-size: 1.4rem;
@@ -220,6 +221,7 @@
     .task-list-subtasks {
       .subtask-cell a {
         color: $default-color;
+        display: inline-block;
       }
     }
 
@@ -265,7 +267,7 @@
         border-left: 1px solid $default-border-color;
       }
       span {
-        padding: 2px 8px;
+        padding: 4px 8px;
         display: table-cell;
 
         a {
@@ -277,6 +279,10 @@
           i {
             padding-right: 8px;
           }
+        }
+
+        .subtask-time-tracking {
+          display: inline;
         }
       }
     }
